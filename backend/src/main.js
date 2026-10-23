@@ -25,7 +25,7 @@ servidor.set("views", __dirname + "/views")
 
 servidor.use(express.static(__dirname + "/public"));
 
-servidor.use("/", formRouter)
+servidor.use("/formulario", formRouter)
 
 
 
