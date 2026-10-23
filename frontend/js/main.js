@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
             body: JSON.stringify(datos)
         }
     
-        fetch("https://lading-page-hospital-3.onrender.com", options)
+        fetch("https://lading-page-hospital-2.onrender.com/formulario", options)
     }catch{
         alert("Error al enviar datos")
     }
