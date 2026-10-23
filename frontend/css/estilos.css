@@ -58,7 +58,7 @@ header nav ul li a:hover{
 
 .hero{
     height: calc(100vh - 84.06px);
-    background-image: url("http://localhost:3000/img/hero.jpg");
+    background-image: url("https://lading-page-hospital-2.onrender.com/img/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

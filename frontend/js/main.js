@@ -34,25 +34,27 @@ const correo = document.getElementById("correo")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    const datos = {
-        nombre: nombre.value,
-        apellido: apellido.value,
-        correo: correo.value,
-        producto: producto.value
-    }
-    const options = {
-        method: "POST",
-        headers:{
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(datos)
-    }
+    try{
 
-    fetch("http://localhost:3000/", options)
-
-    nombre.value = ""
-    apellido.value = ""
-    correo.value = ""
+        const datos = {
+            nombre: nombre.value,
+            apellido: apellido.value,
+            correo: correo.value,
+            producto: producto.value
+        }
+        const options = {
+            method: "POST",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(datos)
+        }
+    
+        fetch("https://lading-page-hospital-2.onrender.com", options)
+    }catch{
+        alert("Error al enviar datos")
+    }
+    form.reset()
 
     alert("Datos enviados a MONGO DB")
 })
