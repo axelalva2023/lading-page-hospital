@@ -133,7 +133,7 @@ header nav ul li a:hover{
     box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
-    margin: 1em;
+    margin: 1.5em;
 }
 
 .contenedor-general-productos div:hover{
@@ -271,7 +271,8 @@ footer div ul li a{
 
     .contenedor-general-contacto div form{
         width: 100%;
-        font-size: 1em;
+        font-size: 1.3em;
+        height: 20em;
     }
 
     .contenedor-general-contacto div iframe{
