@@ -8,6 +8,10 @@ import "dotenv/config";
 
 const servidor = express();
 
+servidor.get("/", (req, res) => {
+    res.send("¡El servidor funciona correctamente!");
+});
+
 const PORT = process.env.PORT || 3000;
 
 const httpServer = servidor.listen(PORT, "0.0.0.0", () => console.log("Servidor corriendo exitosamente")); mongoose.connect(process.env.MONGO_URI).then(() => console.log("Conectado a MONGODB"))
