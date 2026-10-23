@@ -56,5 +56,10 @@ form.addEventListener("submit", (e) => {
     }
     form.reset()
 
-    alert("Datos enviados a MONGO DB")
+    Swal.fire({
+  title: 'Datos enviados a MONGODB',
+  text: 'Haga click para continuar',
+  icon: 'success',
+  confirmButtonText: 'Click'
+})
 })
